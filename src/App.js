@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { Window } from "@progress/kendo-react-dialogs";
+import "./App.css";
+// Set the variables here.
+import "@progress/kendo-theme-bootstrap/dist/all.scss";
+import "bootstrap/scss/bootstrap.scss";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div class="row">
+        <div class="col-md-4">
+          <Window>hello1</Window>
+        </div>
+        <div class="col-md-4">
+          <Window>hello2</Window>
+        </div>
+        <div class="col-md-4">
+          <Window>hello3</Window>
+        </div>
+      </div>
     </div>
   );
 }
